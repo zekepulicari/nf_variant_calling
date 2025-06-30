@@ -1,0 +1,2 @@
+2025-06-30 00:40:34	7.1s	curious_heyrovsky	OK	10655aa12375e6797b65a964b028ab3f	7555cfe6-952c-40c6-abe0-f485c69d11ef	nextflow run samtools_index.nf
+2025-06-30 00:43:57	6.3s	friendly_legentil	OK	ca3ae777046527b2ddd81706eda527e3	72925cfc-eb1f-4e68-8488-3a0533688bf8	nextflow run samtools_index.nf
