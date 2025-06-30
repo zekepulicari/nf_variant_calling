@@ -5,8 +5,7 @@
  */
 
  // Primary Input
-params.bam = "${projectDir}/data/bam/*.bam"
-params.reads_bam = "${projectDir}/data/bam/reads_mother.bam"
+params.bam = "${projectDir}/data/sample_bams.txt"
 params.outdir    = "results_genomics"
 
 // Output directories
@@ -32,7 +31,7 @@ workflow {
     ref_intervals_ch = file(params.intervals)
 
     // Get input files
-    bam_files_ch = Channel.fromPath(params.bam)
+    bam_files_ch = Channel.fromPath(params.bam).splitText()
     outdir_bai_ch = Channel.fromPath(params.outdir_bai)
 
     // Run the module to create Index File

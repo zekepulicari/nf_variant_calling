@@ -1,10 +1,7 @@
 /*
  * Generate BAM index file
  */
-/*
-params.reads_bam = "${projectDir}/data/bam/*.bam"
-params.outdir    = "results_genomics"
-*/
+
 process SAMTOOLS_INDEX {
 
     conda '/home/kihonlinux/anaconda3/envs/samtools'
@@ -22,13 +19,3 @@ process SAMTOOLS_INDEX {
     samtools index '$input_bam'
     """
 }
-/*
-workflow {
-
-    reads_ch = Channel.fromPath(params.reads_bam)
-    
-    // Create index file for input BAM file
-    SAMTOOLS_INDEX(reads_ch)
-
-}
-*/
