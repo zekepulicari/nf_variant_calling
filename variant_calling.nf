@@ -37,12 +37,9 @@ workflow {
 
     // Run the module to create Index File
     SAMTOOLS_INDEX(bam_files_ch)
-    bam_files_ch.view()
-    SAMTOOLS_INDEX.out.view() // to check if the outputs are right
     
     // Run the module to start the variant calling process
     gatk_variants = GATK_HAPLOTYPE_CALLER(
-        bam_files_ch,
         SAMTOOLS_INDEX.out, 
         ref_fa_ch, 
         ref_index_ch, 
