@@ -21,7 +21,7 @@ params.intervals = "${projectDir}/data/ref/intervals.bed"
 
 // Import modules
 include { SAMTOOLS_INDEX } from "${projectDir}/modules/samtools_index.nf"
-include { GATK_HAPLOTYPECALLER } from "${projectDir}/modules/gatk.nf"
+include { GATK_HAPLOTYPE_CALLER } from "${projectDir}/modules/gatk.nf"
 
 // Variant calling: genomic analysis method to identify variants in a genome sequence relative to a reference genome. Example of variants are SNPs, short variants, indels. 
 workflow {
@@ -37,10 +37,12 @@ workflow {
 
     // Run the module to create Index File
     SAMTOOLS_INDEX(bam_files_ch)
+    bam_files_ch.view()
     SAMTOOLS_INDEX.out.view() // to check if the outputs are right
     
     // Run the module to start the variant calling process
-    gatk_variants = GATK_HAPLOTYPECALLER(
+    gatk_variants = GATK_HAPLOTYPE_CALLER(
+        bam_files_ch,
         SAMTOOLS_INDEX.out, 
         ref_fa_ch, 
         ref_index_ch, 

@@ -1,0 +1,52 @@
+Using GATK jar /home/kihonlinux/anaconda3/envs/gatk4/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/kihonlinux/anaconda3/envs/gatk4/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar HaplotypeCaller -R ref.fasta -I reads_son.bam -O reads_son.bam.vcf -L intervals.bed
+02:12:15.211 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/kihonlinux/anaconda3/envs/gatk4/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+02:12:15.770 INFO  HaplotypeCaller - ------------------------------------------------------------
+02:12:15.772 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.3.0.0
+02:12:15.772 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+02:12:15.773 INFO  HaplotypeCaller - Executing as kihonlinux@kihon on Linux v5.15.167.4-microsoft-standard-WSL2 amd64
+02:12:15.773 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v11.0.13+7-b1751.21
+02:12:15.774 INFO  HaplotypeCaller - Start Date/Time: June 30, 2025 at 2:12:15 AM UTC
+02:12:15.774 INFO  HaplotypeCaller - ------------------------------------------------------------
+02:12:15.774 INFO  HaplotypeCaller - ------------------------------------------------------------
+02:12:15.776 INFO  HaplotypeCaller - HTSJDK Version: 3.0.1
+02:12:15.776 INFO  HaplotypeCaller - Picard Version: 2.27.5
+02:12:15.777 INFO  HaplotypeCaller - Built for Spark Version: 2.4.5
+02:12:15.777 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+02:12:15.777 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+02:12:15.777 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+02:12:15.778 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+02:12:15.778 INFO  HaplotypeCaller - Deflater: IntelDeflater
+02:12:15.778 INFO  HaplotypeCaller - Inflater: IntelInflater
+02:12:15.778 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+02:12:15.779 INFO  HaplotypeCaller - Requester pays: disabled
+02:12:15.779 INFO  HaplotypeCaller - Initializing engine
+02:12:16.151 INFO  FeatureManager - Using codec BEDCodec to read file file:///home/kihonlinux/Documents/nf_variant_calling/work/ce/a66237a7d2e7fb1d3fcff126e2bce9/intervals.bed
+02:12:16.167 INFO  IntervalArgumentCollection - Processing 6369 bp from intervals
+02:12:16.179 INFO  HaplotypeCaller - Done initializing engine
+02:12:16.194 INFO  HaplotypeCallerEngine - Disabling physical phasing, which is supported only for reference-model confidence output
+02:12:16.235 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/home/kihonlinux/anaconda3/envs/gatk4/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_utils.so
+02:12:16.241 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/home/kihonlinux/anaconda3/envs/gatk4/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+02:12:16.303 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+02:12:16.305 INFO  IntelPairHmm - Available threads: 16
+02:12:16.305 INFO  IntelPairHmm - Requested threads: 4
+02:12:16.305 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+02:12:16.361 INFO  ProgressMeter - Starting traversal
+02:12:16.362 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+02:12:16.390 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.0
+02:12:16.390 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 0.0
+02:12:16.391 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 0.00 sec
+02:12:16.397 INFO  HaplotypeCaller - Shutting down engine
+[June 30, 2025 at 2:12:16 AM UTC] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=150994944
+***********************************************************************
+
+A USER ERROR has occurred: Traversal by intervals was requested but some input files are not indexed.
+Please index all input files:
+
+samtools index /home/kihonlinux/Documents/nf_variant_calling/work/ce/a66237a7d2e7fb1d3fcff126e2bce9/reads_son.bam
+
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

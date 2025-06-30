@@ -1,2 +1,8 @@
 2025-06-30 00:40:34	7.1s	curious_heyrovsky	OK	10655aa12375e6797b65a964b028ab3f	7555cfe6-952c-40c6-abe0-f485c69d11ef	nextflow run samtools_index.nf
 2025-06-30 00:43:57	6.3s	friendly_legentil	OK	ca3ae777046527b2ddd81706eda527e3	72925cfc-eb1f-4e68-8488-3a0533688bf8	nextflow run samtools_index.nf
+2025-06-30 02:09:09	-	friendly_stallman	-	44d3fe3dfa1d4d56cefa941b768eec05	68036fb5-76c8-4cf4-b635-950e9cdce256	nextflow run variant_calling.nf
+2025-06-30 02:10:05	-	compassionate_laplace	-	44d3fe3dfa1d4d56cefa941b768eec05	6332013c-f029-4f33-ba61-766eed08b77f	nextflow run variant_calling.nf
+2025-06-30 02:11:57	19.9s	marvelous_volhard	ERR	8ccce4b53991b009929b17ceb85d0294	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf
+2025-06-30 02:28:05	17.5s	kickass_yonath	ERR	8ccce4b53991b009929b17ceb85d0294	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf -resume
+2025-06-30 02:30:20	15s	hopeful_franklin	ERR	5b9bfbc0f5907b1e3755aebcb3bd8b71	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf -resume
+2025-06-30 02:35:16	-	romantic_jones	-	5b9bfbc0f5907b1e3755aebcb3bd8b71	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf -resume
