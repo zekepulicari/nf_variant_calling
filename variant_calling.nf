@@ -5,7 +5,7 @@
  */
 
  // Primary Input
-params.bam = "${projectDir}/data/sample_bams.txt"
+params.bams_dir = "${projectDir}/data/bam"
 params.outdir    = "results_genomics"
 
 // Output directories
@@ -31,11 +31,13 @@ workflow {
     ref_intervals_ch = file(params.intervals)
 
     // Get input files
-    bam_files_ch = Channel.fromPath(params.bam).splitText()
+    Channel
+    .fromPath("${params.bams_dir}/*.bam")
+    .set { bam_files }
     outdir_bai_ch = Channel.fromPath(params.outdir_bai)
 
     // Run the module to create Index File
-    SAMTOOLS_INDEX(bam_files_ch)
+    SAMTOOLS_INDEX(bam_files)
     
     // Run the module to start the variant calling process
     gatk_variants = GATK_HAPLOTYPE_CALLER(

@@ -4,7 +4,7 @@
 
 process SAMTOOLS_INDEX {
 
-    conda '/home/kihonlinux/anaconda3/envs/samtools'
+    container 'quay.io/biocontainers/samtools:1.22.1--h96c455f_0'
 
     publishDir params.outdir, mode: 'symlink'
 

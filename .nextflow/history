@@ -14,3 +14,24 @@
 2025-06-30 03:08:18	9.2s	zen_newton	ERR	d71369e0ac5e7081f6c3a7f9f471c366	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf -resume
 2025-06-30 03:09:45	4.3s	disturbed_faraday	ERR	d71369e0ac5e7081f6c3a7f9f471c366	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf -resume
 2025-06-30 03:10:20	4.8s	wise_golick	OK	d71369e0ac5e7081f6c3a7f9f471c366	decbd066-da69-4e3b-a2f3-3c43a080ed79	nextflow run variant_calling.nf -resume
+2025-11-15 19:12:44	3.2s	special_mahavira	ERR	d71369e0ac5e7081f6c3a7f9f471c366	58b84844-ebad-4f42-9351-4bf83e3e89f2	nextflow run variant_calling.nf
+2025-11-15 19:24:25	37.9s	sad_ramanujan	ERR	d71369e0ac5e7081f6c3a7f9f471c366	90e9f131-944e-48b0-98fd-e3d44febac96	nextflow run variant_calling.nf
+2025-11-15 19:32:50	6.4s	disturbed_engelbart	ERR	d71369e0ac5e7081f6c3a7f9f471c366	4ec0597a-f555-4704-85e0-9fba9fca54bb	nextflow run variant_calling.nf
+2025-11-16 17:35:48	3.1s	desperate_church	ERR	d71369e0ac5e7081f6c3a7f9f471c366	2a88aee0-b61b-4a6c-90e4-33ca8c843014	nextflow run variant_calling.nf
+2025-11-16 17:36:01	2.5s	cheesy_saha	ERR	d71369e0ac5e7081f6c3a7f9f471c366	bf76c2b4-d0e1-440d-9158-79712144790e	nextflow run variant_calling.nf
+2025-11-16 17:40:25	3.1s	soggy_heyrovsky	ERR	d71369e0ac5e7081f6c3a7f9f471c366	a8af58e8-17f7-4483-b4ef-434807244f9a	nextflow run variant_calling.nf
+2025-11-16 17:41:09	7.8s	naughty_perlman	ERR	d71369e0ac5e7081f6c3a7f9f471c366	3f730202-2887-442c-a6bf-bdd7dde64c8a	nextflow run variant_calling.nf
+2025-11-16 17:50:32	7.7s	distracted_lavoisier	ERR	d71369e0ac5e7081f6c3a7f9f471c366	418932ff-1bed-4224-9c01-a3b8201d95e4	nextflow run variant_calling.nf
+2025-11-16 17:54:54	2.6s	reverent_volhard	OK	eebf0bf66e7d4ed48344e14c79b8c841	855962f9-f609-4078-abc3-0c0baba928e8	nextflow run variant_calling.nf
+2025-11-16 17:55:17	2.9s	hungry_magritte	OK	eebf0bf66e7d4ed48344e14c79b8c841	f49f3a08-893d-4c65-925b-77a292182137	nextflow run variant_calling.nf
+2025-11-16 17:55:57	6.7s	suspicious_coulomb	ERR	09b4c05db675007519dddd08af6dacfe	f0e9203b-66e5-4167-ba23-615037b4d4e5	nextflow run variant_calling.nf
+2025-11-16 18:08:52	19.7s	nice_kowalevski	OK	09b4c05db675007519dddd08af6dacfe	5171e26d-4a32-4877-affa-08a220105556	nextflow run variant_calling.nf
+2025-11-16 18:10:04	3.1s	tender_goodall	OK	09b4c05db675007519dddd08af6dacfe	5171e26d-4a32-4877-affa-08a220105556	nextflow run variant_calling.nf -ansi-log false -resume
+2025-11-16 18:10:17	19.3s	stoic_lamarr	OK	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -ansi-log false
+2025-11-16 19:05:45	-	high_swirles	-	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume
+2025-11-16 19:06:02	18.8s	deadly_sax	ERR	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume
+2025-11-16 19:07:08	18.5s	peaceful_varahamihira	ERR	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume
+2025-11-16 19:10:11	19.8s	friendly_meninsky	OK	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume
+2025-11-16 19:12:07	19.4s	zen_sanger	ERR	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume
+2025-11-16 19:17:38	20s	mighty_pauling	OK	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume
+2025-11-16 21:36:21	3.6s	nasty_minsky	OK	09b4c05db675007519dddd08af6dacfe	f4c54a61-5889-40b7-beff-734c5fb58584	nextflow run variant_calling.nf -resume

@@ -1,70 +1,76 @@
-Jun-30 03:05:29.626 [main] DEBUG nextflow.cli.Launcher - $> nextflow run variant_calling.nf -resume
-Jun-30 03:05:29.999 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
-Jun-30 03:05:30.093 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/kihonlinux/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
-Jun-30 03:05:30.194 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-30 03:05:30.198 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-30 03:05:30.209 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Jun-30 03:05:30.261 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-30 03:05:30.349 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/kihonlinux/Documents/nf_variant_calling/nextflow.config
-Jun-30 03:05:30.360 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/kihonlinux/Documents/nf_variant_calling/nextflow.config
-Jun-30 03:05:30.466 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/kihonlinux/.nextflow/secrets/store.json
-Jun-30 03:05:30.477 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@29d334c] - activable => nextflow.secret.LocalSecretsProvider@29d334c
-Jun-30 03:05:30.503 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jun-30 03:05:31.954 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jun-30 03:05:32.037 [main] DEBUG nextflow.cli.CmdRun - Launching `variant_calling.nf` [voluminous_cray] DSL2 - revision: 6d997d1ebf
-Jun-30 03:05:32.043 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-30 03:05:32.044 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-30 03:05:32.259 [main] DEBUG nextflow.Session - Session UUID: decbd066-da69-4e3b-a2f3-3c43a080ed79
-Jun-30 03:05:32.261 [main] DEBUG nextflow.Session - Run name: voluminous_cray
-Jun-30 03:05:32.263 [main] DEBUG nextflow.Session - Executor pool size: 16
-Jun-30 03:05:32.290 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-30 03:05:32.314 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jun-30 03:05:32.442 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 24.10.4 build 5934
-  Created: 20-01-2025 16:47 UTC 
-  System: Linux 5.15.167.4-microsoft-standard-WSL2
-  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 17.0.10+7
+Nov-16 19:10:10.264 [main] DEBUG nextflow.cli.Launcher - $> nextflow run variant_calling.nf -resume
+Nov-16 19:10:10.476 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.07.0-edge
+Nov-16 19:10:10.513 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.7.0,nf-azure@1.8.1,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.14.0,nf-tower@1.9.2,nf-wave@1.5.0
+Nov-16 19:10:10.547 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-16 19:10:10.549 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-16 19:10:10.554 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Nov-16 19:10:10.575 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-16 19:10:10.623 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/nextflow.config
+Nov-16 19:10:10.631 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/nextflow.config
+Nov-16 19:10:10.694 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Nov-16 19:10:10.702 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@14a54ef6] - activable => nextflow.secret.LocalSecretsProvider@14a54ef6
+Nov-16 19:10:10.721 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Nov-16 19:10:11.586 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Nov-16 19:10:11.611 [main] DEBUG nextflow.cli.CmdRun - Launching `variant_calling.nf` [friendly_meninsky] DSL2 - revision: 09b4c05db6
+Nov-16 19:10:11.614 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-16 19:10:11.615 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Nov-16 19:10:11.737 [main] DEBUG nextflow.Session - Session UUID: f4c54a61-5889-40b7-beff-734c5fb58584
+Nov-16 19:10:11.739 [main] DEBUG nextflow.Session - Run name: friendly_meninsky
+Nov-16 19:10:11.740 [main] DEBUG nextflow.Session - Executor pool size: 4
+Nov-16 19:10:11.766 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Nov-16 19:10:11.782 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-16 19:10:11.832 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.07.0-edge build 5923
+  Created: 05-08-2024 20:21 UTC (17:21 ARST)
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.22 on OpenJDK 64-Bit Server VM 17.0.16+8-Ubuntu-0ubuntu122.04.1
   Encoding: UTF-8 (UTF-8)
-  Process: 16192@kihon [127.0.1.1]
-  CPUs: 16 - Mem: 7.4 GB (5.4 GB) - Swap: 2 GB (2 GB)
-Jun-30 03:05:32.587 [main] DEBUG nextflow.Session - Work-dir: /home/kihonlinux/Documents/nf_variant_calling/work [ext2/ext3]
-Jun-30 03:05:32.589 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/kihonlinux/Documents/nf_variant_calling/bin
-Jun-30 03:05:32.636 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-30 03:05:32.674 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jun-30 03:05:32.760 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-30 03:05:32.798 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Jun-30 03:05:33.073 [main] DEBUG nextflow.Session - Session start
-Jun-30 03:05:33.944 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jun-30 03:05:35.184 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-30 03:05:35.185 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-30 03:05:35.203 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jun-30 03:05:35.227 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=7.4 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Jun-30 03:05:35.236 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jun-30 03:05:35.636 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-30 03:05:35.637 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-30 03:05:35.658 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: GATK_HAPLOTYPE_CALLER, SAMTOOLS_INDEX
-Jun-30 03:05:35.659 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
-Jun-30 03:05:35.671 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/kihonlinux/Documents/nf_variant_calling/data/bam/; pattern: *.bam; options: [:]
-Jun-30 03:05:35.675 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SAMTOOLS_INDEX
-Jun-30 03:05:35.677 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATK_HAPLOTYPE_CALLER
-Jun-30 03:05:35.681 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_b5004f79985c6f4c: /home/kihonlinux/Documents/nf_variant_calling/modules/gatk.nf
-  Script_7cb780c34a5f89c4: /home/kihonlinux/Documents/nf_variant_calling/variant_calling.nf
-  Script_87a95073950b0874: /home/kihonlinux/Documents/nf_variant_calling/modules/samtools_index.nf
-Jun-30 03:05:35.682 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jun-30 03:05:35.683 [main] DEBUG nextflow.Session - Session await
-Jun-30 03:05:36.020 [Actor Thread 11] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/home/kihonlinux/anaconda3/envs/samtools; path=/home/kihonlinux/anaconda3/envs/samtools
-Jun-30 03:05:36.334 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [ee/ba8201] Cached process > SAMTOOLS_INDEX (3)
-Jun-30 03:05:36.334 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [be/fba7f3] Cached process > SAMTOOLS_INDEX (1)
-Jun-30 03:05:36.334 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [51/b258b4] Cached process > SAMTOOLS_INDEX (2)
-Jun-30 03:05:36.425 [Actor Thread 12] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/home/kihonlinux/anaconda3/envs/gatk4; path=/home/kihonlinux/anaconda3/envs/gatk4
-Jun-30 03:05:36.458 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [dd/d9348c] Cached process > GATK_HAPLOTYPE_CALLER (1)
-Jun-30 03:05:36.458 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [66/d12d80] Cached process > GATK_HAPLOTYPE_CALLER (3)
-Jun-30 03:05:36.465 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [f8/98d3b3] Cached process > GATK_HAPLOTYPE_CALLER (2)
-Jun-30 03:05:36.522 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jun-30 03:05:36.562 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jun-30 03:05:36.564 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jun-30 03:05:36.576 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=6; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Jun-30 03:05:36.620 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jun-30 03:05:36.680 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Jun-30 03:05:36.684 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 66998@DESKTOP-V3LSSVQ [127.0.1.1]
+  CPUs: 4 - Mem: 15.6 GB (8.7 GB) - Swap: 4 GB (4 GB)
+Nov-16 19:10:11.915 [main] DEBUG nextflow.Session - Work-dir: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/work [ext2/ext3]
+Nov-16 19:10:11.916 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/bin
+Nov-16 19:10:11.936 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-16 19:10:11.954 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-16 19:10:12.004 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-16 19:10:12.025 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Nov-16 19:10:12.189 [main] DEBUG nextflow.Session - Session start
+Nov-16 19:10:12.655 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-16 19:10:13.421 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-16 19:10:13.422 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-16 19:10:13.433 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-16 19:10:13.444 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Nov-16 19:10:13.450 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-16 19:10:13.668 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-16 19:10:13.669 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-16 19:10:13.685 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: GATK_HAPLOTYPE_CALLER, SAMTOOLS_INDEX
+Nov-16 19:10:13.687 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Nov-16 19:10:13.697 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/data/bam/; pattern: *.bam; options: [:]
+Nov-16 19:10:13.699 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SAMTOOLS_INDEX
+Nov-16 19:10:13.702 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATK_HAPLOTYPE_CALLER
+Nov-16 19:10:13.709 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_d308e890398ea28b: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/variant_calling.nf
+  Script_93a1814bedcf87c5: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/modules/samtools_index.nf
+  Script_04fa3b7410518094: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/modules/gatk.nf
+Nov-16 19:10:13.710 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-16 19:10:13.710 [main] DEBUG nextflow.Session - Session await
+Nov-16 19:10:14.121 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [a9/aec009] Cached process > SAMTOOLS_INDEX (2)
+Nov-16 19:10:14.122 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [c3/a80823] Cached process > SAMTOOLS_INDEX (1)
+Nov-16 19:10:14.123 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [73/1dfebd] Cached process > SAMTOOLS_INDEX (3)
+Nov-16 19:10:14.356 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-16 19:10:14.361 [Task submitter] INFO  nextflow.Session - [44/50901b] Submitted process > GATK_HAPLOTYPE_CALLER (2)
+Nov-16 19:10:14.398 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-16 19:10:14.400 [Task submitter] INFO  nextflow.Session - [bf/5e1ad7] Submitted process > GATK_HAPLOTYPE_CALLER (1)
+Nov-16 19:10:14.435 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-16 19:10:14.438 [Task submitter] INFO  nextflow.Session - [27/f64e18] Submitted process > GATK_HAPLOTYPE_CALLER (3)
+Nov-16 19:10:29.164 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: GATK_HAPLOTYPE_CALLER (1); status: COMPLETED; exit: 0; error: -; workDir: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/work/bf/5e1ad7c3df9db795baf184f48e01c3]
+Nov-16 19:10:29.173 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-16 19:10:29.534 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: GATK_HAPLOTYPE_CALLER (3); status: COMPLETED; exit: 0; error: -; workDir: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/work/27/f64e189a91409979a621bd5c3c3f5f]
+Nov-16 19:10:30.417 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: GATK_HAPLOTYPE_CALLER (2); status: COMPLETED; exit: 0; error: -; workDir: /home/zekepuli/Documents/zeke_repositories/nf_variant_calling/work/44/50901b7267e45e8500367d9ee8bef1]
+Nov-16 19:10:30.429 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-16 19:10:30.519 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Nov-16 19:10:30.519 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-16 19:10:30.533 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Nov-16 19:10:30.592 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=3; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=45.8s; failedDuration=0ms; cachedDuration=3.9s;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Nov-16 19:10:30.779 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-16 19:10:30.842 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Nov-16 19:10:30.846 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

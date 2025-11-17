@@ -1,5 +1,7 @@
+// GATK pipelines
+
 process GATK_HAPLOTYPE_CALLER {
-    conda '/home/kihonlinux/anaconda3/envs/gatk4'
+    container 'quay.io/biocontainers/gatk4:4.6.2.0--py310hdfd78af_1'
 
     publishDir params.outdir, mode: 'symlink'
 
@@ -11,16 +13,25 @@ process GATK_HAPLOTYPE_CALLER {
         path interval_list    
     
     output:
-        path "${input_bam}.vcf", emit: vcf
-        path "${input_bam}.vcf.idx", emit: idx
+        path "${input_bam}.g.vcf", emit: vcf
+        path "${input_bam}.g.vcf.idx", emit: idx
     
     script:
         """
         gatk HaplotypeCaller \
             -R ${ref_fasta} \
             -I ${input_bam} \
-            -O ${input_bam}.vcf \
-            -L ${interval_list}
+            -O ${input_bam}.g.vcf \
+            -L ${interval_list} \
+            -ERC GVCF  
         """
-    
+    // -ERC GVCF to produce a genomic vcf .g.vcf 
 }
+
+/*
+process GATK_JOINTGENOTYPING {
+
+
+
+}
+*/
