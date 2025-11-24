@@ -1,7 +1,7 @@
 process GATK_JOINTGENOTYPING  {
     container 'quay.io/biocontainers/gatk4:4.6.2.0--py310hdfd78af_1'
 
-    publishDir params.outdir, mode: 'symlink', overwrite: true
+    publishDir params.outdir, mode: 'move', overwrite: true
 
     input:
         path all_gvcfs
