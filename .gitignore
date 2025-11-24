@@ -207,9 +207,9 @@ marimo/_lsp/
 __marimo__/
 
 # Results
-/results_genomics/
+/results_genomics
 
 # Nextflow cache
-.nextflow/
+/.nextflow
 .nextflow*
 work/
