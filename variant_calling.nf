@@ -18,9 +18,14 @@ params.ref_index = "${projectDir}/data/ref/ref.fasta.fai"
 params.ref_dict = "${projectDir}/data/ref/ref.dict"
 params.intervals = "${projectDir}/data/ref/intervals.bed"
 
+// GenomicsDB params
+params.cohort_name = "family_cohort"
+
+
 // Import modules
 include { SAMTOOLS_INDEX } from "${projectDir}/modules/samtools_index.nf"
-include { GATK_HAPLOTYPE_CALLER } from "${projectDir}/modules/gatk.nf"
+include { GATK_HAPLOTYPE_CALLER } from "${projectDir}/modules/gatk_haplotypecaller.nf"
+include { GATK_JOINTGENOTYPING  } from "${projectDir}/modules/gatk_genomicsdb.nf"
 
 // Variant calling: genomic analysis method to identify variants in a genome sequence relative to a reference genome. Example of variants are SNPs, short variants, indels. 
 workflow {
@@ -46,6 +51,21 @@ workflow {
         ref_index_ch, 
         ref_dict_ch, 
         ref_intervals_ch
+    )
+
+    // collect outputs and reformat for GenomicsDB
+    all_gvcfs_files = gatk_variants.vcf.collect() 
+    all_gvcfs_idxs = gatk_variants.idx.collect()
+
+    // Build the genomicsDB
+    GATK_JOINTGENOTYPING (
+        all_gvcfs_files,  
+        all_gvcfs_idxs,
+        ref_intervals_ch,
+        params.cohort_name,
+        ref_fa_ch,
+        ref_index_ch,
+        ref_dict_ch
     )
 
 }
