@@ -212,4 +212,5 @@ __marimo__/
 # Nextflow cache
 /.nextflow
 .nextflow*
+.nextflow/*
 work/
