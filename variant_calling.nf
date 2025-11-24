@@ -25,7 +25,7 @@ params.cohort_name = "family_cohort"
 // Import modules
 include { SAMTOOLS_INDEX } from "${projectDir}/modules/samtools_index.nf"
 include { GATK_HAPLOTYPE_CALLER } from "${projectDir}/modules/gatk_haplotypecaller.nf"
-include { GATK_JOINTGENOTYPING  } from "${projectDir}/modules/gatk_genomicsdb.nf"
+include { GATK_JOINTGENOTYPING  } from "${projectDir}/modules/gatk_db_genotype.nf"
 
 // Variant calling: genomic analysis method to identify variants in a genome sequence relative to a reference genome. Example of variants are SNPs, short variants, indels. 
 workflow {
