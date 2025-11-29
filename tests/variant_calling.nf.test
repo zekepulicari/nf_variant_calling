@@ -5,6 +5,23 @@ nextflow_pipeline {
 
     test("Should run the entire Genomics Pipeline without failures") {
 
+        params {
+            // Primary input (file of input files, one per line)
+            reads_bam = "${projectDir}/data/bam/*.bam"
+
+            // Output directory
+            outdir = "results_genomics"
+
+            // Reference genome and intervals
+            reference        = "${projectDir}/data/ref/ref.fasta"
+            reference_index  = "${projectDir}/data/ref/ref.fasta.fai"
+            reference_dict   = "${projectDir}/data/ref/ref.dict"
+            intervals        = "${projectDir}/data/ref/intervals.bed"
+
+            // Base name for final output file
+            cohort_name      = "family_cohort"
+        }
+
         when {
             params {
                 // define parameters here. Example: 
