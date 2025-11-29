@@ -1,0 +1,21 @@
+nextflow_pipeline {
+
+    name "Test Workflow variant_calling.nf"
+    script "variant_calling.nf"
+
+    test("Should run the entire Genomics Pipeline without failures") {
+
+        when {
+            params {
+                // define parameters here. Example: 
+                // outdir = "tests/results"
+            }
+        }
+
+        then {
+            assert workflow.success
+        }
+
+    }
+
+}

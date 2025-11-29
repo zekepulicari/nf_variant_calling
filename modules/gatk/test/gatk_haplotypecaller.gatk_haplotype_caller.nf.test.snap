@@ -1,0 +1,25 @@
+{
+    "Should call son's haplotype correctly": {
+        "content": [
+            {
+                "0": [
+                    "reads_son.bam.g.vcf:md5,55b8ba591d0cc7ba2b28884b64e5f731"
+                ],
+                "1": [
+                    "reads_son.bam.g.vcf.idx:md5,dcf680344ce5b15861341da34cb82cdb"
+                ],
+                "idx": [
+                    "reads_son.bam.g.vcf.idx:md5,dcf680344ce5b15861341da34cb82cdb"
+                ],
+                "vcf": [
+                    "reads_son.bam.g.vcf:md5,55b8ba591d0cc7ba2b28884b64e5f731"
+                ]
+            }
+        ],
+        "meta": {
+            "nf-test": "0.9.3",
+            "nextflow": "24.10.4"
+        },
+        "timestamp": "2025-11-28T23:31:59.563031"
+    }
+}
