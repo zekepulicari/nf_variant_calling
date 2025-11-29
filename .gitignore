@@ -214,3 +214,6 @@ __marimo__/
 .nextflow*
 .nextflow/*
 work/
+
+# nf-test files
+.nf-test/
